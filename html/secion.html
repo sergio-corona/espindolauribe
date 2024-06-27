@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../css/scion.css">
+    <title>Form Access</title>
+</head>
+<body>
+    <nav class="list">
+        <ul>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="../html/horarios.html">Horarios</a></li>
+            <li><a href="../html/vision.html">Visión</a></li>
+            <li><a href="../html/mision.html">Misión</a></li>
+            <li><a href="../html/table.html">Productos</a></li>
+            <li><a href="../html/secion.html">Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h3>Formulario</h3>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form action="../php/insertaregistros.php" method="post">
+                <div class="input-container">
+                    <label for="correo">Ingresa tu correo</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required maxlength="80"><br>
+                </div>
+                <div class="input-container">
+                    <label for="name">Coloca tu(s) nombres con apellidos</label><br>
+                    <input type="text" id="name" name="name" placeholder="Coloca tu(s) nombres" required maxlength="80"><br>
+                </div>
+                <div class="input-container">
+                    <label for="contrasena">Ccontraseña</label><br>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required maxlength="80"><br>
+                </div>
+                <div class="input-container">
+                    <label for="numero">Coloca tu número telefónico</label><br>
+                    <input type="tel" id="numero" name="numero" placeholder="Número telefónico" required maxlength="80"><br><br>
+                </div>
+                <input type="submit" class="submit-button">
+            </form>
+        </div>
+        
+    </main>
+
+    <footer>
+        <h3>CONTACTANOS!!!</h3>
+        <h6>NÚMERO TELEFÓNICO: 7772310427 </h6>
+        <h6>O CONTACTANOS A NUESTRO CORREO ELECTRONICO: actividadconalep@gmail.com</h6>
+    </footer>
+</body>
+</html>
